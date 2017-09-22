@@ -23,7 +23,7 @@ class Character():
             print(self.name + " doesn't want to talk to you")
 
     # Fight with this character
-    def fight(self):
+    def fight(self, combat_item):
         print(self.name + " doesn't want to fight with you")
         return True
 
@@ -53,5 +53,12 @@ class Friend(Character):
 	def __init__(self,char_name,char_description):
 		super().__init__(char_name,char_description)
 		self.feelings = None
+
+	def set_feelings(self, character_feelings):
+		self.feelings = character_feelings
+
+	def get_feelings(self):
+		return self.feelings
+	
 
 
