@@ -1,0 +1,9 @@
+Place the main.py file in this root folder. Import all the classes from the rpg folder. Example:
+
+import rpg
+
+marc = rpg.Character("Marc", "A mystical wizard with magic powers")
+
+marc.describe()
+
+Use "rpg" as a prefix when initializing objects from the class that has been imported.

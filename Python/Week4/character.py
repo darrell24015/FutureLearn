@@ -29,6 +29,9 @@ class Character():
 
 class Enemy(Character):
 
+	# Class variable to track number of defeated enemies
+	enemies_defeated = 0
+
 	def __init__(self,char_name,char_description):
 		super().__init__(char_name,char_description)
 		self.weakness = None
@@ -36,6 +39,7 @@ class Enemy(Character):
 	def fight(self, combat_item):
 		if combat_item == self.weakness:
 			print("You fend " + self.name + " off with the " + combat_item)
+			enemies_defeated += 1
 			return True
 
 		else:
@@ -47,6 +51,11 @@ class Enemy(Character):
 
 	def get_weakness(self):
 		return self.weakness
+
+	# TODO
+	# Getter (need a Setter?) for enemies_defeated variable
+	def get_enemies_defeated(self):
+		return self.enemies_defeated
 
 class Friend(Character):
 

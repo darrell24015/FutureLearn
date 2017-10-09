@@ -5,6 +5,7 @@ class Room():
 		self.description = None
 		self.character = None
 		self.linked_rooms = {}
+		self.item = None
 
 	# Getters and Setters
 	def set_description(self, room_description):
@@ -27,6 +28,12 @@ class Room():
 
 	def describe(self):
 		print(self.description)
+
+	def set_item(self, new_item):
+		self.item = new_item
+
+	def get_item(self):
+		return self.item
 
 	# Add linked room method
 	def link_room(self, room_to_link, direction):

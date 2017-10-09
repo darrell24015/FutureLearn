@@ -1,0 +1,12 @@
+Place all the completed classes from Week 4 inside this folder.
+
+Then, make it a package by creating the __init__.py file is this folder.
+
+Once all the code is completed, add documentation for each method and function
+using triple quotes """ This is some documentation """
+
+Then use the built-in tool to create the HTML files with the documentation
+
+On Mac/Linux
+
+python3 -m pydoc -w ./ 
